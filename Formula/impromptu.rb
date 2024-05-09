@@ -4,7 +4,7 @@ class Impromptu < Formula
   url "https://github.com/lovromazgon/impromptu/archive/refs/tags/v0.1.0.tar.gz"
   sha256 "799239821a350c67e38815bd42551bd7c58c631db5fab2ec37fa07632c969af5"
   license "MIT"
-  head "https://github.com/lovromazgon/impromptu", branch: "main"
+  head "https://github.com/lovromazgon/impromptu.git", branch: "main"
 
   depends_on "go" => :build
 
