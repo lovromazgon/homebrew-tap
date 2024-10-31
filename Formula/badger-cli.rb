@@ -5,20 +5,20 @@
 class BadgerCli < Formula
   desc ""
   homepage "https://github.com/lovromazgon/homebrew-tap"
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.2.0/badger-cli_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "fe36f45c2e25a5a6b97a21f4f6c618161e753f0ca0be12f9c2c34ea0b987f8f9"
+      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.2.1/badger-cli_0.2.1_Darwin_x86_64.tar.gz"
+      sha256 "b0297551508ddd500ac0e9dd49d7fb4d02e9fab12b2bf66bfb5195f7243aea2a"
 
       def install
         bin.install "badger-cli"
       end
     end
     on_arm do
-      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.2.0/badger-cli_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "7bc9818117c24d97b995be3dc01c6b6560d07664c623dcdb6ae7dd1ba31f9a49"
+      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.2.1/badger-cli_0.2.1_Darwin_arm64.tar.gz"
+      sha256 "010f13dd46927f2d12a75a9f2b843bdf6c42d30d857fcc70985f8234edadfdb7"
 
       def install
         bin.install "badger-cli"
@@ -29,8 +29,8 @@ class BadgerCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lovromazgon/badger-cli/releases/download/v0.2.0/badger-cli_0.2.0_Linux_x86_64.tar.gz"
-        sha256 "8892f037d234b091ebb08234683c4790720aefb2a2442da0d5af96aead6298d4"
+        url "https://github.com/lovromazgon/badger-cli/releases/download/v0.2.1/badger-cli_0.2.1_Linux_x86_64.tar.gz"
+        sha256 "4698cfc6f25ea7d7d21989c9e8107288b80b324eb0ae6988016b92ead9bc75a5"
 
         def install
           bin.install "badger-cli"
@@ -39,8 +39,8 @@ class BadgerCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lovromazgon/badger-cli/releases/download/v0.2.0/badger-cli_0.2.0_Linux_arm64.tar.gz"
-        sha256 "b89a0b95f9b14a6538f36518fd369e2044b4c51e7084349edad86008fef93bde"
+        url "https://github.com/lovromazgon/badger-cli/releases/download/v0.2.1/badger-cli_0.2.1_Linux_arm64.tar.gz"
+        sha256 "43ecc1af861eb88705a14e1f3395011fe7421adf41efc8934ccd70e79ed0bac9"
 
         def install
           bin.install "badger-cli"
