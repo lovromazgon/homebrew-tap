@@ -5,20 +5,20 @@
 class GrafanaTui < Formula
   desc ""
   homepage "https://github.com/lovromazgon/homebrew-tap"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lovromazgon/grafana-tui/releases/download/v0.1.0/grafana-tui_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "b0da0687341cf446bc50d1c02bf3ce5af49ccf72429fa3e0ed0a648eaba2ed12"
+      url "https://github.com/lovromazgon/grafana-tui/releases/download/v0.2.0/grafana-tui_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "236a8060662ab074e351563de8c45aac4c7c2d77ca609fa874332938a0e7e711"
 
       define_method(:install) do
         bin.install "grafana-tui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lovromazgon/grafana-tui/releases/download/v0.1.0/grafana-tui_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "0d6c63f63bb3c2c7432d07b192d1de64dfb1987ba430c4f5d715143042cca12e"
+      url "https://github.com/lovromazgon/grafana-tui/releases/download/v0.2.0/grafana-tui_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "09b259918ef35843f074f001e7cce1d1f885b55ba20be367ebb3f6851a47351f"
 
       define_method(:install) do
         bin.install "grafana-tui"
@@ -28,15 +28,15 @@ class GrafanaTui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lovromazgon/grafana-tui/releases/download/v0.1.0/grafana-tui_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "0f6603a4ad2c94117e78c8f975e1808852c2b77ac90cc8783621cd939d506650"
+      url "https://github.com/lovromazgon/grafana-tui/releases/download/v0.2.0/grafana-tui_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "21f0808108e12bdece2991621e20c6bb7f3bedd0ccf4be6eb451b94d86838024"
       define_method(:install) do
         bin.install "grafana-tui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lovromazgon/grafana-tui/releases/download/v0.1.0/grafana-tui_0.1.0_Linux_arm64.tar.gz"
-      sha256 "e53a72f5540e0f0e99dc6fba393ede57760f208e7d202f72bb5626dd2b91b915"
+      url "https://github.com/lovromazgon/grafana-tui/releases/download/v0.2.0/grafana-tui_0.2.0_Linux_arm64.tar.gz"
+      sha256 "9fddeeef7be1e4db135207f6598a9d0beb75d66bf34f9f3709750a5b74ab76d3"
       define_method(:install) do
         bin.install "grafana-tui"
       end
