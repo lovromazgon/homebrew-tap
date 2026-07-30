@@ -5,39 +5,39 @@
 class BadgerCli < Formula
   desc ""
   homepage "https://github.com/lovromazgon/homebrew-tap"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.3.0/badger-cli_0.3.0_Darwin_x86_64.tar.gz"
-      sha256 "5e221c814397e7c017b93afb046b5da37f8928378963e06fbac9e04ce83f1e6d"
+      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.3.1/badger-cli_0.3.1_Darwin_x86_64.tar.gz"
+      sha256 "dfd1c5fe409f04cf11ff9a79bb2cbf965e544a3f313a35645de7b05e3a6a938b"
 
-      def install
+      define_method(:install) do
         bin.install "badger-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.3.0/badger-cli_0.3.0_Darwin_arm64.tar.gz"
-      sha256 "07d6f868bcbcb7efbae38c6cda3e1f993393da98b902c5f14872e8380a9e4da7"
+      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.3.1/badger-cli_0.3.1_Darwin_arm64.tar.gz"
+      sha256 "14cf0c102c1d1ed455cc17a39d432b95dc40e3aff16617dbab105511614c8bbb"
 
-      def install
+      define_method(:install) do
         bin.install "badger-cli"
       end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.3.0/badger-cli_0.3.0_Linux_x86_64.tar.gz"
-      sha256 "ae72e01411dcc944fc781ee3906d65fd8633f5ef816a4f1764c7cff320467b46"
-      def install
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.3.1/badger-cli_0.3.1_Linux_x86_64.tar.gz"
+      sha256 "1283c078b04b40b7ad79d45d85c06b5532d3e6f98bac1dbbf8aaac16f98c96e8"
+      define_method(:install) do
         bin.install "badger-cli"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.3.0/badger-cli_0.3.0_Linux_arm64.tar.gz"
-      sha256 "29615fa2b143d0b03dbd4f1be5069d7623727cd0e80441c6e7a228f1bd2ad5ea"
-      def install
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/lovromazgon/badger-cli/releases/download/v0.3.1/badger-cli_0.3.1_Linux_arm64.tar.gz"
+      sha256 "669295e8e42ead47b02721fbdf0184860247e917594bf3ef05b50ff0c4d08e79"
+      define_method(:install) do
         bin.install "badger-cli"
       end
     end
